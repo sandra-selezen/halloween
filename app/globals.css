@@ -53,11 +53,11 @@
 }
 
 /*=============== BASE ===============*/
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -70,9 +70,9 @@ body {
   color: var(--white-color);
 }
 
-ul {
+/* ul {
   list-style: none;
-}
+} */
 
 a {
   text-decoration: none;
@@ -141,3 +141,61 @@ img {
   height: 250px;
   opacity: .8;
 }
+
+/*=============== HEADER & NAV ===============*/
+
+
+/* Show menu */
+
+
+/* Change background header */
+
+
+/* Active link */
+
+
+/*=============== HOME ===============*/
+
+
+/* Star animation */
+
+
+
+/*=============== BUTTON ===============*/
+
+
+/*=============== CATEGORY ===============*/
+
+
+/*=============== ABOUT ===============*/
+
+
+/*=============== ITEMS ===============*/
+
+
+/*=============== PARTY ===============*/
+
+
+/*=============== FOOTER ===============*/
+
+
+/*=============== SCROLL BAR ===============*/
+
+
+/*=============== SCROLL UP ===============*/
+
+
+/* Show Scroll Up*/
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
+
+
+/* For 2K resolutions (2048 x 1152) */
