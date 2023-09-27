@@ -1,16 +1,16 @@
 import { Footer } from "@/components/Footer/Footer"
 import { Header } from "@/components/Header/Header"
+import { Home } from "@/sections/Home/Home"
 
-const Home = () => {
+const Page = () => {
   return (
     <>
       <Header />
-      <main>
-        <h1>Page</h1>  
+      <main className="main">
+        <Home />
       </main>
-      <Footer />
     </>
   )
 }
 
-export default Home
+export default Page
