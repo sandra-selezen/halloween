@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import { RiCloseLine, RiMenu4Line } from 'react-icons/ri'
 import Logo from '../../public/images/logo-skull.png'
 import NavImg from '../../public/images/nav-bat.png'
+import { navLinks } from '@/content'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -43,18 +44,11 @@ export const Header = () => {
         </Link>
         <div className={`nav__menu ${isOpen ? 'show-menu' : ''}`} id='nav-menu'>
           <ul className='nav__list'>
-            <li className='nav__item'>
-              <Link href={'#home'} className='nav__link'>Home</Link>
-            </li>
-            <li className='nav__item'>
-              <Link href={'#about'} className='nav__link'>About us</Link>
-            </li>
-            <li className='nav__item'>
-              <Link href={'#items'} className='nav__link'>Items</Link>
-            </li>
-            <li className='nav__item'>
-              <Link href={'#party'} className='nav__link'>Party</Link>
-            </li>
+            {navLinks.map((link) => (
+              <li className='nav__item' key={link.id}>
+                <Link href={link.href} className='nav__link'>{link.title}</Link>
+              </li>
+            ))}
           </ul>
 
           {/* Close button */}
