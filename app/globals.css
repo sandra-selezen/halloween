@@ -239,6 +239,10 @@ img {
 
 /* Change background header */
 
+.bg-header {
+  background-color: var(--body-color);
+  box-shadow: 0 4px 8px hsla(22, 10%, 2%, .4);
+}
 
 /* Active link */
 
@@ -313,7 +317,6 @@ img {
   top: 18rem;
 }
 
-
 .home__tree-1 {
   left: -2rem;
 }
@@ -352,6 +355,16 @@ img {
     transform: scale(1) rotate(15deg);
     opacity: 1;
   }
+}
+
+.home .shape__small {
+  top: -3rem;
+  left: -3rem;
+}
+
+.home .shape__big {
+  bottom: 5rem;
+  right: -10rem;
 }
 
 /*=============== BUTTON ===============*/

@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Poppins, Butcherman } from 'next/font/google'
+import Image from 'next/image'
+import BgImage from '../public/images/shape-bg.png'
 
 const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({
@@ -28,7 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable} ${butcherman.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Image src={BgImage} alt='background image' className='shape__bg' />
+        {children}
+      </body>
     </html>
   )
 }

@@ -2,16 +2,34 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { RiCloseLine, RiMenu4Line } from 'react-icons/ri'
 import Logo from '../../public/images/logo-skull.png'
 import NavImg from '../../public/images/nav-bat.png'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 50) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
   return (
-    <header className='header' id='header'>
+    <header className={`header ${scrolling ? 'bg-header' : ''}`} id='header'>
       <nav className='nav main-container'>
         <Link href={'#'} className='nav__logo'>
           <Image

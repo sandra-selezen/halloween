@@ -8,6 +8,8 @@ import Tree2 from '../../public/images/home-tree2.png'
 export const Home = () => {
   return (
     <section className='home section' id='home'>
+      <div className="shape__small"></div>
+      <div className="shape__big"></div>
       <div className='home__container main-container main-grid'>
         <div className='home__data'>
           <h1 className='home__title'>
