@@ -10,9 +10,7 @@ export const Category = () => {
       <h2 className="section__title">Choose your <br />spooky category</h2>
       <div className="category__container main-container main-grid">
         {categoryCard.map((card) => (
-          <div className="category__card" key={card.id}>
-            <CategoryCard card={card} />
-          </div>
+          <CategoryCard card={card} key={card.id} />
         ))}
       </div>
     </section>

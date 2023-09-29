@@ -12,3 +12,10 @@ export interface ICategoryCard {
   title: string
   description: string
 }
+
+export interface IItemCard {
+  id: string
+  name: string
+  price: string
+  image: IImage
+}
