@@ -6,8 +6,9 @@ import { CategoryCard } from '@/components/CategoryCard/CategoryCard'
 export const Category = () => {
   return (
     <section className="category section">
+      <div className="shape__small"></div>
       <h2 className="section__title">Choose your <br />spooky category</h2>
-      <div className="category__container container grid">
+      <div className="category__container main-container main-grid">
         {categoryCard.map((card) => (
           <div className="category__card" key={card.id}>
             <CategoryCard card={card} />
