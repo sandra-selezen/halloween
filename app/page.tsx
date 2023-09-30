@@ -16,6 +16,7 @@ const Page = () => {
         <About />
         <Items />
         <Party />
+        <Footer />
       </main>
     </>
   )
