@@ -4,6 +4,7 @@ import { Category } from "@/sections/Category/Category"
 import { Header } from "@/components/Header/Header"
 import { Home } from "@/sections/Home/Home"
 import { Items } from "@/sections/Items/Items"
+import { Party } from "@/sections/Party/Party"
 
 const Page = () => {
   return (
@@ -14,6 +15,7 @@ const Page = () => {
         <Category />
         <About />
         <Items />
+        <Party />
       </main>
     </>
   )
