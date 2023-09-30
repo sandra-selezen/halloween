@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import PumpkinImg from '../../public/images/category-pumpkin.png'
 import { categoryCard } from '@/content'
 import { CategoryCard } from '@/components/CategoryCard/CategoryCard'
 

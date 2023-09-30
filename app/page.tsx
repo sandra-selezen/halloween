@@ -5,6 +5,7 @@ import { Header } from "@/components/Header/Header"
 import { Home } from "@/sections/Home/Home"
 import { Items } from "@/sections/Items/Items"
 import { Party } from "@/sections/Party/Party"
+import { ScrollUpButton } from "@/components/ScrollUpButton/ScrollUpButton"
 
 const Page = () => {
   return (
@@ -17,6 +18,7 @@ const Page = () => {
         <Items />
         <Party />
         <Footer />
+        <ScrollUpButton />
       </main>
     </>
   )

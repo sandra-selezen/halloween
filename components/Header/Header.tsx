@@ -9,7 +9,7 @@ import NavImg from '../../public/images/nav-bat.png'
 import { navLinks } from '@/content'
 
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
