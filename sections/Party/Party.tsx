@@ -17,7 +17,7 @@ export const Party = () => {
           <Link href="#" className="button">Start The Party!!!</Link>
         </div>
         <div className="party__images">
-          <Image src={Cauldron} alt="party cauldron" className="party__img" width={250} />
+          <Image src={Cauldron} alt="party cauldron" className="party__img" width={200} />
           <Image src={Stars} alt="stars" className="party__star-1" width={50} />
           <Image src={Stars} alt="stars" className="party__star-2" width={50} />
         </div>
