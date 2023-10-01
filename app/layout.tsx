@@ -4,7 +4,6 @@ import { Inter, Poppins, Butcherman } from 'next/font/google'
 import Image from 'next/image'
 import BgImage from '../public/images/shape-bg.png'
 
-const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
