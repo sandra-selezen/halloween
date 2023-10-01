@@ -922,16 +922,19 @@ img {
     bottom: -12rem;
   }
 
-  .about__data {
+  .about__data,
+  .party__data {
     text-align: initial;
   }
 
-  .about__container .section__title {
+  .about__container .section__title,
+  .party-container .section__title {
     text-align: initial;
     margin-bottom: 1.5rem;
   }
 
-  .about__sescription {
+  .about__sescription,
+  .party__description {
     margin-bottom: 2.5rem;
   }
 
@@ -966,6 +969,122 @@ img {
     column-gap: 8rem;
     align-items: center;
   }
+
+  .party__img {
+    width: 400px;
+  }
+
+  .party__star-1,
+  .party__star-2 {
+    width: 100px;
+  }
+
+  .party__star-1 {
+    top: -5rem;
+    left: -5rem;
+  }
+
+  .party__star-2 {
+    right: -3rem;
+    bottom: 3rem;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__content {
+    column-gap: 5rem;
+  }
+
+  .footer__link {
+    font-size: var(--normal-font-size);
+  }
+
+  .footer__social {
+    column-gap: 1.5rem;
+  }
+
+  .footer__social-link {
+    font-size: 1.5rem;
+  }
+
+  .footer__copy {
+    margin: 10rem 0 4rem;
+  }
+
+  .footer__tree-1,
+  .footer__tree-2 {
+    width: 250px;
+  }
+
+  .footer__tree-1 {
+    top: initial;
+    bottom: 1.5rem;
+    right: -2rem;
+  }
+
+  .footer__tree-2 {
+    bottom: -1.5rem;
+  }
+
+  .footer .shape__big {
+    bottom: -16rem;
+  }
+
+  .scrollup {
+    right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1072px) {
+  .main-container {
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1248px) {
+  .home__tree-1,
+  .home__tree-2 {
+    width: 450px;
+  }
+
+  .home__img {
+    width: 600px;
+    margin-top: 3rem;
+  }
+
+  .footer__tree-2 {
+    left: 10%;
+  }
 }
 
 /* For 2K resolutions (2048 x 1152) */
+
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.6;
+  }
+
+  .home__container {
+    position: relative;
+    max-width: 1400px;
+    overflow: hidden;
+  }
+
+  .home__tree-1,
+  .home__tree-2 {
+    top: 5rem ;
+  }
+
+  .footer__tree-1,
+  .footer__tree-2 {
+    width: 300px;
+  }
+}
