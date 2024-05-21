@@ -6,7 +6,7 @@
 
 ## Technologies Used
 
-- JavaScript
+- TypeScript
 - React
 - Next.js
 - Framer-motion
