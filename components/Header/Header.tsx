@@ -16,6 +16,7 @@ export const Header = () => {
     const handleScroll = () => {
       if (window.scrollY >= 50) {
         setScrolling(true);
+        setIsOpen(false);
       } else {
         setScrolling(false);
       }

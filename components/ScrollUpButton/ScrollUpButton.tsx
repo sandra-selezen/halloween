@@ -30,11 +30,12 @@ export const ScrollUpButton = () => {
 
   return (
     <button
+      type="button"
       className={`scrollup ${showScroll ? "show-scroll" : ""}`}
       id="scroll-up"
       onClick={scrollToTop}
     >
-        <RiArrowUpLine />
+      <RiArrowUpLine />
     </button>
   )
 }
