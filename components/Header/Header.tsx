@@ -1,12 +1,10 @@
-"use client"
+"use client";
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { useEffect, useState } from 'react'
-import { RiCloseLine, RiMenu4Line } from 'react-icons/ri'
-import Logo from '../../public/images/logo-skull.png'
-import NavImg from '../../public/images/nav-bat.png'
-import { navLinks } from '@/content'
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { RiCloseLine, RiMenu4Line } from "react-icons/ri";
+import { navLinks } from "@/content";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,47 +20,62 @@ export const Header = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-
   return (
-    <header className={`header ${scrolling ? 'bg-header' : ''}`} id='header'>
-      <nav className='nav main-container'>
-        <Link href={'#'} className='nav__logo'>
+    <header className={`header ${scrolling ? "bg-header" : ""}`} id="header">
+      <nav className="nav main-container">
+        <Link href={"#"} className="nav__logo">
           <Image
-            src={Logo}
-            alt='Logo'
+            src="/images/logo-skull.png"
+            alt="Logo"
             width={20}
             height={20}
-            className='logo-img'
+            className="logo-img"
           />
           Halloween
         </Link>
-        <div className={`nav__menu ${isOpen ? 'show-menu' : ''}`} id='nav-menu'>
-          <ul className='nav__list'>
+        <div className={`nav__menu ${isOpen ? "show-menu" : ""}`} id="nav-menu">
+          <ul className="nav__list">
             {navLinks.map((link) => (
-              <li className='nav__item' key={link.id}>
-                <Link href={link.href} className='nav__link'>{link.title}</Link>
+              <li className="nav__item" key={link.id}>
+                <Link href={link.href} className="nav__link">
+                  {link.title}
+                </Link>
               </li>
             ))}
           </ul>
 
           {/* Close button */}
-          <div className='nav__close' id='nav-close' onClick={() => setIsOpen(false)}>
+          <div
+            className="nav__close"
+            id="nav-close"
+            onClick={() => setIsOpen(false)}
+          >
             <RiCloseLine />
           </div>
-          <Image src={NavImg} alt='Nav image' className='nav__img' width={180} />
+          <Image
+            src="/images/nav-bat.png"
+            alt="Nav image"
+            className="nav__img"
+            width={180}
+            height={80}
+          />
         </div>
         {/* Toggle button */}
-        <div className='nav__toggle' id='nav-toggle' onClick={() => setIsOpen(true)}>
+        <div
+          className="nav__toggle"
+          id="nav-toggle"
+          onClick={() => setIsOpen(true)}
+        >
           <RiMenu4Line />
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};

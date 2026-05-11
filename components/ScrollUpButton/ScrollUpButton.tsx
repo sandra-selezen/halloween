@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { RiArrowUpLine } from "react-icons/ri"
+import { useEffect, useState } from "react";
+import { RiArrowUpLine } from "react-icons/ri";
 
 export const ScrollUpButton = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -17,7 +17,7 @@ export const ScrollUpButton = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
@@ -37,5 +37,5 @@ export const ScrollUpButton = () => {
     >
       <RiArrowUpLine />
     </button>
-  )
-}
+  );
+};
