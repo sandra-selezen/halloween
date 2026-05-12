@@ -1,14 +1,16 @@
-# Halloween Landing Page
+# Halloween - Trick or Treat 👻
 
-An animated landing page built with React, Next.js, Tailwind CSS, and Framer Motion.
+A Halloween-themed animated landing page built with Next.js, React, TypeScript, Framer Motion, and CSS.
 
-The project focuses on responsive layout, smooth animations, and a visually immersive UI.
+The project focuses on a creative seasonal UI, smooth animations, reusable components, and responsive layout.
 
 ![Halloween](./public/images/halloween.png)
 
 ## Technologies Used
 
+- TypeScript
 - React
 - Next.js
 - Framer Motion
-- TypeScript
+- React Icons
+- CSS
